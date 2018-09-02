@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shahsank.health.cchart">
+
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="45dp"
+        android:prompt="@string/app_name"
+        android:entries="@array/Items"/>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:prompt="@string/app_name"
+        android:entries="@array/Items"/>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="56dp"
+        android:prompt="@string/app_name"
+        android:entries="@array/Items"/>
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner3"
+        android:layout_marginTop="52dp"
+        android:prompt="@string/app_name"
+        android:entries="@array/Items"/>
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner4"
+        android:layout_marginTop="52dp"
+        android:prompt="@string/app_name"
+        android:entries="@array/Items"/>
+
+    <Button
+        android:id="@+id/btnsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:background="#0091ea"
+        android:text="Submit" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/spinner2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="      0"
+        android:textSize="25sp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_alignEnd="@+id/edit2"
+        android:ems="10"
+        android:hint="        0"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/spinner3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:hint="        0"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edit5"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/spinner4"
+        android:layout_alignEnd="@+id/edit3"
+        android:ems="10"
+        android:hint="        0"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btnsubmit"
+        android:layout_alignEnd="@+id/edit4"
+        android:ems="10"
+        android:hint="        0"
+        android:inputType="number" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shahsank.health.MainActivity">
+
+    <Button
+        android:id="@+id/cchart"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/intake"
+        android:layout_alignStart="@+id/intake"
+        android:layout_marginBottom="52dp"
+        android:text="Calorie Chart"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <Button
+        android:id="@+id/intake"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/running"
+        android:layout_alignStart="@+id/running"
+        android:layout_marginBottom="58dp"
+        android:text="Calorie Intake"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <Button
+        android:id="@+id/running"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="74dp"
+        android:text="Start Running"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="             HOME"
+        android:textSize="40dp" />
+
+</RelativeLayout>
